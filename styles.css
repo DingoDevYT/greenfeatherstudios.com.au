@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root {
+    --bg-dark: #121212;
+    --bg-surface: #1e1e1e;
+    --text-main: #f5f5f5;
+    --text-muted: #a0a0a0;
+    --green-light: #82d275;
+    --green-dark: #388e3c;
+    --green-gradient: linear-gradient(135deg, var(--green-light), var(--green-dark));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ACME Gothic', 'Acme', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo img {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--green-light);
+}
+
+main {
+    padding-top: 100px;
+    min-height: calc(100vh - 80px);
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle at center, #1e3320 0%, var(--bg-dark) 70%);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: var(--green-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--green-gradient);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56, 142, 60, 0.4);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--bg-surface);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--green-light);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.feature-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.feature-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-image {
+    flex: 0 0 25%; /* Forces the image block to be exactly 25% of the row */
+    display: flex;
+    justify-content: center;
+}
+
+.feature-image img {
+    width: 100%;
+    /* Removed border and box-shadow to let Jonathan blend into the background */
+}
+
+.feature-text {
+    flex: 1; /* Allows text to take up the remaining 75% of the row */
+}
+
+.feature-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--green-light);
+}
+
+.feature-text p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--bg-surface);
+    border: 1px solid #333;
+    color: var(--text-main);
+    border-radius: 5px;
+    font-family: 'ACME Gothic', 'Acme', sans-serif;
+    font-size: 1.1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--green-light);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--bg-surface);
+    border-top: 1px solid #333;
+    margin-top: auto;
+}
+
+/* === ANIMATION CLASSES === */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px); /* Default text slide-up behavior */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hidden.slide-left {
+    transform: translateX(-100px); /* Pushes element left before scroll */
+}
+
+.hidden.slide-right {
+    transform: translateX(100px); /* Pushes element right before scroll */
+}
+
+.hidden.show {
+    opacity: 1;
+    transform: translate(0, 0); /* Resets both X and Y seamlessly */
+}
+
+/* === MOBILE RESPONSIVENESS === */
+@media (max-width: 768px) {
+    .feature-section, .feature-section.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .feature-image {
+        flex: auto;
+        max-width: 50%; /* Keeps him from getting too massive when stacked on phones */
+        margin: 0 auto 20px auto;
+    }
+    
+    .feature-text h2 {
+        font-size: 2rem;
+    }
+}

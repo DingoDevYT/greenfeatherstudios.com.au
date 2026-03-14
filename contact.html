@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Greenfeather Studios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/GFS_LongFull_Colored.png" alt="Greenfeather Studios Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="windweaver.html">Games</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html" style="color: var(--green-light);">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero hidden">
+            <h1>Get in Touch</h1>
+            <p>Have a question about Windweaver, press inquiries, or just want to say hi?</p>
+        </section>
+
+        <section class="container hidden">
+            <form action="https://formsubmit.co/windweavergfs@gmail.com" method="POST" class="card" style="background-color: transparent; border: none;">
+                
+                <input type="hidden" name="_captcha" value="false">
+                
+                <input type="hidden" name="_next" value="https://formsubmit.co/thankyou">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Greenfeather Studios. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
