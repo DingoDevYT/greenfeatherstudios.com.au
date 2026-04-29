@@ -26,12 +26,20 @@
         <section class="hero hidden" style="background: radial-gradient(circle at center, #1a2a3a 0%, var(--bg-dark) 70%);">
             <img src="assets/images/Windweaver_FullLogo.png" alt="Windweaver Logo" style="max-width: 400px; margin-bottom: 20px;">
             <p>Harness the power of the wind in this upcoming high-speed indie adventure.</p>
+            
+            <div class="video-container" id="video-facade">
+                <img src="https://img.youtube.com/vi/_xM0nBsxm4M/maxresdefault.jpg" alt="Windweaver Trailer Thumbnail">
+                <div class="play-button"></div>
+            </div>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="https://www.youtube.com/watch?v=_xM0nBsxm4M" target="_blank" style="color: var(--text-muted); font-size: 0.9rem; text-decoration: none;">Watch directly on YouTube</a>
+            </div>
         </section>
 
         <section class="container">
             
             <div class="feature-section">
-                <div class="feature-image hidden slide-left">
+                <div class="feature-image hidden slide-left paintbrush-bg paintbrush-green">
                     <img src="assets/images/JONATHAN_RENDER1.png" alt="Jonathan Running">
                 </div>
                 <div class="feature-text hidden">
@@ -42,33 +50,50 @@
             </div>
 
             <div class="feature-section reverse">
-                <div class="feature-image hidden slide-right">
+                <div class="feature-image hidden slide-right paintbrush-bg paintbrush-orange">
                     <img src="assets/images/JONATHAN_RENDER3.png" alt="Jonathan Walking">
                 </div>
                 <div class="feature-text hidden">
                     <h2>Dash Through the World Below</h2>
-                    <p>Speed is everything. Without wings to carry you, you'll rely on pure skill and the world around you to chain together massive dashs, blitz across huge gaps, and outmaneuver foes.</p>
+                    <p>Speed is everything. Without wings to carry you, you'll rely on pure skill and the world around you to chain together massive dashes, blitz across huge gaps, and outmaneuver foes.</p>
                     <p>Master the rhythm of the sloped terrain to maintain your top speed and uncover the world's deeper truths - wrapped in challenging, fast-paced stages.</p>
                 </div>
             </div>
 
             <div class="feature-section">
-                <div class="feature-image hidden slide-left">
+                <div class="feature-image hidden slide-left paintbrush-bg paintbrush-green">
                     <img src="assets/images/JONATHAN_RENDER2.png" alt="Jonathan Jumping">
                 </div>
                 <div class="feature-text hidden">
                     <h2>The Journey Ahead</h2>
-                    <p>Windweaver is currently in active development by the dedicated team at Greenfeather Studios. We are pushing hard to refine the core dash mechanics and polish our 3D environments.</p>
-                    <p>Stay tuned for development roadmaps, early alpha footage, and major milestone announcements as we ready ourselves for a Kickstarter and Steam Demo release!</p>
+                    <p>Windweaver is a high-speed 3D platformer built in Unity. We have established our core mechanics and are pushing towards publishing a playable demo for a public Steam playtest.</p>
+                    <p>Stay tuned for development roadmaps, early alpha footage, and major milestone announcements as we ready ourselves for release!</p>
                 </div>
             </div>
 
+        </section>
+
+        <section class="container hidden">
+            <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: var(--green-light);">Screenshots</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="assets/images/screenshot_1.png" alt="Windweaver Screenshot 1"></div>
+                <div class="gallery-item"><img src="assets/images/screenshot_2.png" alt="Windweaver Screenshot 2"></div>
+                <div class="gallery-item"><img src="assets/images/screenshot_3.png" alt="Windweaver Screenshot 3"></div>
+                <div class="gallery-item"><img src="assets/images/screenshot_4.png" alt="Windweaver Screenshot 4"></div>
+                <div class="gallery-item"><img src="assets/images/screenshot_5.png" alt="Windweaver Screenshot 5"></div>
+                <div class="gallery-item"><img src="assets/images/screenshot_6.png" alt="Windweaver Screenshot 6"></div>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Greenfeather Studios. All rights reserved.</p>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="Enlarged Screenshot" id="lightbox-img">
+    </div>
 
     <script src="script.js"></script>
 </body>
