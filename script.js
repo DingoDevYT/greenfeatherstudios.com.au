@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const videoFacade = document.getElementById('video-facade');
     if (videoFacade) {
         videoFacade.addEventListener('click', () => {
-            videoFacade.innerHTML = '<iframe src="https://www.youtube.com/embed/_xM0nBsxm4M?autoplay=1&rel=0" title="Windweaver Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+            videoFacade.innerHTML = '<iframe src="https://www.youtube.com/embed/TDeatG5pULc?autoplay=1&rel=0" title="Windweaver Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';
             videoFacade.style.cursor = 'default';
         });
     }
