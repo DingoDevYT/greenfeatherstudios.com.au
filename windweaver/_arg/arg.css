@@ -185,6 +185,138 @@ hr {
 
 .center { text-align: center; }
 .faint { opacity: 0.55; }
+.spacer { height: 28px; }
+
+/* ---- Poetic verse fragments (Deltarune register: sparse, centered, unhurried) ---- */
+.verse {
+    text-align: center;
+    max-width: 42ch;
+    margin: 30px auto;
+    color: #c3bbab;
+    line-height: 2;
+    font-size: 1.06rem;
+}
+.verse em { color: #d8cfbd; font-style: italic; }
+.refrain {
+    text-align: center;
+    color: #8f887c;
+    letter-spacing: 1px;
+    margin: 3px 0;
+}
+
+/* ---- GED corporate letterhead ---- */
+.ged-mark {
+    display: block;
+    width: 108px;
+    margin: 0 auto 6px;
+    opacity: 0.72;
+    filter: grayscale(1);
+}
+.letterhead {
+    text-align: center;
+    border-bottom: 1px solid #23301f;
+    padding-bottom: 14px;
+    margin-bottom: 6px;
+}
+.dept {
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #6b6b5f;
+    text-transform: uppercase;
+}
+
+/* ---- Dated log fragment ---- */
+.frag { margin: 18px 0; }
+.frag .stamp-date {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    color: #5c5c52;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* ---- Researcher marginalia (looks hand-added) ---- */
+.hand {
+    display: block;
+    margin: 10px 0 10px 22px;
+    padding-left: 12px;
+    border-left: 2px solid #2a241a;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: #8a7a5e;
+    font-style: italic;
+    transform: rotate(-0.4deg);
+}
+
+/* ---- Links that hide in the text ---- */
+a.buried {
+    color: inherit;
+    text-decoration: none;
+    cursor: text;
+}
+a.buried:hover { color: #4f79b0; cursor: pointer; }
+
+/* ---- Aged personnel ID card (light panel on the dark page) ---- */
+.idcard {
+    max-width: 420px;
+    margin: 20px auto;
+    background: #cfc7b4;
+    color: #201d16;
+    border: 1px solid #7d7462;
+    box-shadow: 0 0 40px rgba(0,0,0,0.7);
+    padding: 0;
+    filter: sepia(0.15) contrast(0.96);
+}
+.idcard-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #b3aa95;
+    border-bottom: 2px solid #6f6754;
+    padding: 8px 12px;
+}
+.idcard-head img { width: 54px; filter: none; }
+.idcard-head .idtitle {
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #2a271f;
+    text-transform: uppercase;
+}
+.idcard-body { display: flex; gap: 14px; padding: 16px; }
+.idphoto {
+    width: 128px;
+    height: 128px;
+    flex: 0 0 128px;
+    background: #0a0a0a;
+    border: 1px solid #4a4436;
+    image-rendering: auto;
+}
+.idfields { flex: 1; font-family: "Courier New", monospace; font-size: 13px; }
+.idlabel { color: #5a5344; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; }
+.idvalue { color: #1c1913; margin-bottom: 10px; }
+.idredact {
+    display: inline-block;
+    background: #1a1712;
+    color: #1a1712;
+    padding: 0 6px;
+    letter-spacing: 2px;
+    user-select: none;
+}
+.deceased {
+    display: inline-block;
+    transform: rotate(-8deg);
+    border: 3px solid #7a2020;
+    color: #7a2020;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding: 2px 12px;
+    opacity: 0.7;
+    margin-top: 6px;
+}
 
 /* Respect users who don't want motion */
 @media (prefers-reduced-motion: reduce) {
