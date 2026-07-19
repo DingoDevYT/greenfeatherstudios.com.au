@@ -69,6 +69,37 @@ nav {
     color: var(--green-light);
 }
 
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1100;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--text-main);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 main {
     padding-top: 100px;
     min-height: calc(100vh - 80px);
@@ -77,7 +108,7 @@ main {
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.85)), url('assets/images/Library_Hero.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.85)), url('assets/images/Library_Hero.webp') center/cover no-repeat;
     border-bottom: 1px solid #333;
 }
 
@@ -443,17 +474,69 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 81px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        background-color: rgba(18, 18, 18, 0.98);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #333;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    .nav-links.open {
+        max-height: 320px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        font-size: 1.3rem;
+    }
+
+    .nav-links li + li a {
+        border-top: 1px solid #262626;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero p {
+        font-size: 1.15rem;
+    }
+
     .feature-section, .feature-section.reverse {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .feature-image {
         flex: auto;
         max-width: 50%;
         margin: 0 auto 20px auto;
     }
-    
+
     .feature-text h2 {
         font-size: 2rem;
     }
