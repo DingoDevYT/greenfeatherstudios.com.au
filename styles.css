@@ -373,7 +373,7 @@ main {
     background-color: var(--bg-raise);
 }
 
-.card img {
+.card > img {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -398,7 +398,7 @@ main {
 }
 
 .featured {
-    max-width: 860px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 44px 34px;
     background:
@@ -852,9 +852,9 @@ img.team-img {
 
 .social-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 20px;
-    max-width: 1080px;
+    grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+    gap: 18px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
@@ -901,6 +901,30 @@ img.team-img {
 .s-youtube  { background: linear-gradient(170deg, #ff6b6b, #b1121b); }
 .s-instagram { background: linear-gradient(170deg, #f9a03f 0%, #e4478a 45%, #8a3ab9 100%); }
 .s-x        { background: linear-gradient(170deg, #45454f, #0d0d10); }
+.s-kickstarter { background: linear-gradient(170deg, #2bdd8f, #05913f); }
+
+.social-tile img {
+    width: 40px;
+    height: auto;
+}
+
+.footer-socials img {
+    width: 21px;
+    height: auto;
+}
+
+.btn img {
+    width: 19px;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    flex-shrink: 0;
+}
+
+.btn-kickstarter {
+    background: linear-gradient(180deg, #2bdd8f, #05913f);
+    color: var(--ink);
+}
 
 .footer-socials {
     display: flex;
