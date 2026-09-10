@@ -818,15 +818,33 @@ img.team-img {
     display: none;
 }
 
+.countdown.is-live {
+    padding: 22px 16px 20px;
+    border-color: var(--green);
+    box-shadow: 0 var(--lift) 0 var(--ink), 0 0 42px rgba(130, 229, 84, 0.35);
+}
+
 .countdown.is-live .countdown-live {
     display: block;
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: var(--text-main);
+}
+
+.live-title {
+    font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+    animation: livePop 0.7s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+}
+
+.countdown.is-live .btn-row {
+    margin-top: 16px;
+}
+
+@keyframes livePop {
+    0%   { opacity: 0; transform: scale(0.4) rotate(-8deg); }
+    70%  { opacity: 1; transform: scale(1.08) rotate(3deg); }
+    100% { opacity: 1; transform: scale(1) rotate(-1.5deg); }
 }
 
 .countdown.is-live .countdown-label {
-    color: var(--orange);
+    display: none;
 }
 
 .countdown-sm {
@@ -1329,7 +1347,7 @@ footer a.footer-link:hover {
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
 
-    .hero::after, .hero-logo { animation: none; }
+    .hero::after, .hero-logo, .live-title { animation: none; }
 
     .hidden {
         opacity: 1;
@@ -1342,4 +1360,158 @@ footer a.footer-link:hover {
     *, *::before, *::after {
         transition-duration: 0.01ms !important;
     }
+}
+
+#launch-takeover {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    display: none;
+    place-items: center;
+    text-align: center;
+    padding: 24px;
+    background:
+        radial-gradient(circle at 50% 45%, rgba(58, 29, 100, 0.97), rgba(13, 7, 22, 0.99) 68%);
+    backdrop-filter: blur(8px);
+}
+
+#launch-takeover.on {
+    display: grid;
+    animation: ltFade 0.45s ease both;
+}
+
+@keyframes ltFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.lt-inner {
+    position: relative;
+    max-width: 900px;
+}
+
+.lt-sub,
+.lt-count,
+.lt-live {
+    position: relative;
+    z-index: 1;
+}
+
+.lt-sub {
+    font-size: clamp(0.95rem, 2.4vw, 1.4rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--green);
+    margin-bottom: 6px;
+}
+
+.lt-count .chunk {
+    font-size: clamp(7rem, 30vw, 20rem);
+    line-height: 0.95;
+}
+
+.lt-count {
+    animation: ltPop 0.85s cubic-bezier(0.2, 1.5, 0.4, 1);
+}
+
+@keyframes ltPop {
+    0%   { transform: scale(1.5); opacity: 0.15; }
+    45%  { transform: scale(0.96); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+#launch-takeover.tense .lt-count .chunk {
+    --chunk-solid: var(--orange);
+    --chunk-fill: linear-gradient(180deg, #fff2d8, var(--orange) 60%, #e07a2c);
+}
+
+#launch-takeover.tense .lt-inner {
+    animation: ltShake 0.42s infinite;
+}
+
+@keyframes ltShake {
+    0%, 100% { transform: translate(0, 0); }
+    25%      { transform: translate(-5px, 3px); }
+    50%      { transform: translate(4px, -4px); }
+    75%      { transform: translate(-3px, -2px); }
+}
+
+.lt-live {
+    display: none;
+}
+
+#launch-takeover.live .lt-live {
+    display: block;
+    animation: ltPop 0.7s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+}
+
+#launch-takeover.live .lt-sub,
+#launch-takeover.live .lt-count {
+    display: none;
+}
+
+.lt-live .chunk {
+    font-size: clamp(3rem, 13vw, 8rem);
+}
+
+.lt-live .btn-row {
+    margin-top: 26px;
+}
+
+.lt-ring {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 340px;
+    height: 340px;
+    margin: -170px 0 0 -170px;
+    border: 5px solid var(--green);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#launch-takeover.live .lt-ring {
+    animation: ltRing 1.8s ease-out infinite;
+}
+
+.lt-ring:nth-child(2) { animation-delay: 0.6s; }
+.lt-ring:nth-child(3) { animation-delay: 1.2s; }
+
+@keyframes ltRing {
+    0%   { transform: scale(0.3); opacity: 0.75; }
+    100% { transform: scale(4.2); opacity: 0; }
+}
+
+.lt-close {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    line-height: 1;
+    color: var(--text-muted);
+    background: rgba(13, 7, 22, 0.7);
+    border: 2px solid var(--ink);
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.lt-close:hover {
+    color: var(--ink);
+    background: var(--green);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #launch-takeover.on,
+    .lt-count,
+    #launch-takeover.tense .lt-inner,
+    #launch-takeover.live .lt-live,
+    #launch-takeover.live .lt-ring { animation: none; }
+    .lt-ring { display: none; }
 }
