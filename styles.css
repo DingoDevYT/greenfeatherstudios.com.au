@@ -869,11 +869,16 @@ img.team-img {
 }
 
 .social-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
-    gap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
     max-width: 1240px;
     margin: 0 auto;
+}
+
+.social-tile {
+    flex: 0 1 160px;
 }
 
 .social-tile {
@@ -881,7 +886,7 @@ img.team-img {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 26px 18px;
+    padding: 26px 12px;
     border-radius: 18px;
     border: var(--outline) solid var(--ink);
     box-shadow: 0 var(--lift) 0 var(--ink);
@@ -907,7 +912,9 @@ img.team-img {
 
 .social-tile small {
     display: block;
-    font-size: 0.78rem;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    font-size: 0.66rem;
     font-weight: 600;
     text-transform: none;
     letter-spacing: 0;
@@ -920,6 +927,7 @@ img.team-img {
 .s-instagram { background: linear-gradient(170deg, #f9a03f 0%, #e4478a 45%, #8a3ab9 100%); }
 .s-x        { background: linear-gradient(170deg, #45454f, #0d0d10); }
 .s-kickstarter { background: linear-gradient(170deg, #2bdd8f, #05913f); }
+.s-bluesky  { background: linear-gradient(170deg, #4aa8ff, #0060c8); }
 
 .social-tile img {
     width: 40px;
@@ -1514,4 +1522,9 @@ footer a.footer-link:hover {
     #launch-takeover.live .lt-live,
     #launch-takeover.live .lt-ring { animation: none; }
     .lt-ring { display: none; }
+}
+
+body:has(.countdown.is-live) .btn-steam:not(.btn-live),
+body:has(.countdown.is-live) .btn-kickstarter:not(.btn-live) {
+    display: none;
 }

@@ -118,10 +118,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 + '<p class="lt-sub">The Windweaver demo drops in</p>'
                 + '<div class="lt-count"><span class="chunk" data-text="60">60</span></div>'
                 + '<div class="lt-live">'
-                + '<span class="chunk chunk-sun" data-text="It\'s Live!">It\'s Live!</span>'
+                + '<span class="chunk chunk-sun" data-text="Demo Out Now!">Demo Out Now!</span>'
                 + '<div class="btn-row">'
-                + '<a href="' + STEAM_URL + '" target="_blank" rel="noopener" class="btn btn-steam"><svg aria-hidden="true"><use href="#i-steam"/></svg>Play the Demo</a>'
-                + '<a href="' + KS_URL + '" target="_blank" rel="noopener" class="btn btn-kickstarter"><img src="assets/images/kickstarter-k.png" alt="">Back us on Kickstarter</a>'
+                + '<a href="' + STEAM_URL + '" target="_blank" rel="noopener" class="btn btn-steam btn-live"><svg aria-hidden="true"><use href="#i-steam"/></svg>Play the Demo</a>'
+                + '<a href="' + KS_URL + '" target="_blank" rel="noopener" class="btn btn-kickstarter btn-live"><img src="assets/images/kickstarter-k.png" alt="">Back us on Kickstarter</a>'
                 + '</div></div></div>'
                 + '<button class="lt-close" type="button" aria-label="Dismiss">&times;</button>';
             document.body.appendChild(overlay);
