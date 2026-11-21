@@ -3,135 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenfeather Studios</title>
-    <meta name="description" content="Greenfeather Studios is an independent game studio from South Australia, making Windweaver, a high-speed 3D platformer. Free demo out 11 September 2026.">
+    <title>Windweaver | Greenfeather Studios</title>
+    <meta name="description" content="Windweaver is a blisteringly fast 3D platformer from Greenfeather Studios, an independent team from South Australia. The free demo is out now on Steam.">
     <link rel="icon" type="image/png" href="assets/images/GFS_Icon_Colored.png">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Greenfeather Studios">
-    <meta property="og:title" content="Greenfeather Studios">
-    <meta property="og:description" content="Independent game studio from South Australia. Makers of Windweaver, a high-speed 3D platformer. Free demo out 11 September 2026.">
+    <meta property="og:title" content="Windweaver | Greenfeather Studios">
+    <meta property="og:description" content="A blisteringly fast 3D platformer from South Australia. Free demo out now on Steam.">
     <meta property="og:url" content="https://www.greenfeatherstudios.com.au/">
     <meta property="og:image" content="https://www.greenfeatherstudios.com.au/assets/images/og_windweaver.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Windweaver_GFS">
-    <meta name="theme-color" content="#180b29">
+    <meta name="theme-color" content="#232323">
 
-    <noscript><style>.hidden{opacity:1;transform:none}</style></noscript>
-    <link rel="stylesheet" href="styles.min.css?v=3d0e6d86">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,700&display=swap">
+    <link rel="stylesheet" href="styles.min.css?v=e03d9ca0">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <svg class="sprite" aria-hidden="true" focusable="false">
         <symbol id="i-steam" viewBox="0 0 24 24"><path d="M11.979 0C5.678 0 .511 4.86 0 11.02l6.442 2.662a3.39 3.39 0 0 1 1.912-.59c.063 0 .125.002.188.005l2.866-4.153v-.06c0-2.5 2.034-4.533 4.534-4.533 2.5 0 4.535 2.034 4.535 4.534 0 2.5-2.035 4.535-4.535 4.535h-.105l-4.089 2.917c0 .052.004.105.004.158 0 1.877-1.527 3.404-3.404 3.404-1.646 0-3.022-1.18-3.331-2.74L.9 15.29C2.323 20.316 6.918 24 12.021 24 18.635 24 24 18.635 24 12.021 24 5.407 18.593 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></symbol>
         <symbol id="i-discord" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></symbol>
         <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol>
         <symbol id="i-instagram" viewBox="0 0 24 24"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.0559 1.6884.0684 4.9462.0622 3.2578-.0062 3.668-.0207 4.9478-.0814 1.2797-.0607 2.1469-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.0555-1.2809.0687-1.6898.0624-4.9483-.0062-3.2585-.0207-3.6668-.0814-4.9465-.0607-1.2797-.264-2.1487-.5635-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.0044 11.977.0018 8.718.008 8.31.0212 7.0301.084m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.0723 4.848-.0793 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.0723-4.8496.0793-3.2047.007-3.5825-.006-4.8483-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.1573-2.7701 6.1508-6.1733-.0065-3.4032-2.7714-6.1565-6.1744-6.1498-3.403.0067-6.156 2.771-6.1494 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></symbol>
         <symbol id="i-x" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></symbol>
         <symbol id="i-bluesky" viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></symbol>
+        <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M15.7 3.3a1 1 0 0 1 0 1.4L8.4 12l7.3 7.3a1 1 0 0 1-1.4 1.4l-8-8a1 1 0 0 1 0-1.4l8-8a1 1 0 0 1 1.4 0z"/></symbol>
+        <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M8.3 3.3a1 1 0 0 0 0 1.4L15.6 12l-7.3 7.3a1 1 0 0 0 1.4 1.4l8-8a1 1 0 0 0 0-1.4l-8-8a1 1 0 0 0-1.4 0z"/></symbol>
     </svg>
 
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="assets/images/GFS_LongFull_Colored.png" alt="Greenfeather Studios Logo"></a>
-            </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+    <header class="site-nav">
+        <nav class="wrap nav-inner" aria-label="Main">
+            <a class="nav-brand" href="#top">
+                <img class="gfs" src="assets/images/GFS_LongFull_Colored.png" alt="Greenfeather Studios" width="3200" height="800">
+                <span class="nav-divider" aria-hidden="true"></span>
+                <img class="ww" src="assets/images/Windweaver_FullLogo.png" alt="Windweaver" width="1280" height="360">
+            </a>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="windweaver.html">Games</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#wishlist">Wishlist</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#community">Community</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero hidden">
-            <h1 class="chunk" data-text="Building the next generation of high‑speed adventures.">Building the next generation of high‑speed adventures.</h1>
-            <p>Greenfeather Studios is a small independent team in South Australia.<br>Right now we're making Windweaver.</p>
-            <div class="btn-row">
-                <a href="windweaver.html" class="btn">Explore Our Games</a>
-                <a href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener" class="btn btn-steam"><svg aria-hidden="true"><use href="#i-steam"/></svg>Wishlist on Steam</a>
+    <main id="main">
+        <section class="hero" id="top" aria-label="Windweaver">
+            <span class="hero-deco" aria-hidden="true"></span>
+            <div class="hero-copy">
+                <h1 class="hero-logo"><img src="assets/images/Windweaver_FullLogo.png" alt="Windweaver" width="1280" height="360"></h1>
+                <div class="hero-actions">
+                    <a class="btn btn-orange" href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener">Play free demo</a>
+                    <a class="btn btn-dark" href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-steam"/></svg>Wishlist on Steam</a>
+                </div>
+            </div>
+            <div class="hero-scene">
+                <img src="assets/images/ww_wallrun.webp" alt="Jonathan wallrunning past a chevron sign in a canyon" width="2000" height="1125" fetchpriority="high">
             </div>
         </section>
 
-        <section class="container hidden">
-            <h2 class="section-title chunk" data-text="Featured Title">Featured Title</h2>
-            <div class="card featured">
-                <img src="assets/images/Windweaver_FullLogo.png" alt="Windweaver">
-                <p style="margin-bottom: 26px; font-size: 1.15rem;">Jonathan can't fly anymore, so he learned to run. Chain dashes, dives and wallruns through a vast, hand-crafted world at breakneck speed, and uncover the truth of a world that isn't what you were told.</p>
-                <div class="countdown" style="margin: 0 auto 26px auto;">
-                    <p class="countdown-label">Free demo out in</p>
-                    <div class="countdown-units">
-                        <div class="cd-unit"><span class="cd-num" data-cd="days">&ndash;</span><span class="cd-word">Days</span></div>
-                        <div class="cd-unit"><span class="cd-num" data-cd="hours">&ndash;</span><span class="cd-word">Hrs</span></div>
-                        <div class="cd-unit"><span class="cd-num" data-cd="minutes">&ndash;</span><span class="cd-word">Min</span></div>
-                        <div class="cd-unit"><span class="cd-num" data-cd="seconds">&ndash;</span><span class="cd-word">Sec</span></div>
+        <section class="screen screen-orange" id="about" aria-labelledby="about-title">
+            <div class="wrap">
+                <div class="screen-head">
+                    <h2 class="ribbon" id="about-title">About</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="panel panel-media">
+                        <div class="video" data-youtube="YG2Mr_RnnYg" data-title="Windweaver demo trailer">
+                            <button class="video-play" type="button" aria-label="Play the Windweaver demo trailer">
+                                <img src="assets/images/ww_hero_canyon.webp" alt="" width="2400" height="1350" loading="lazy">
+                                <span class="video-play-icon" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <a class="hint" href="https://www.youtube.com/watch?v=YG2Mr_RnnYg" target="_blank" rel="noopener"><span class="hint-key"><svg aria-hidden="true"><use href="#i-youtube"/></svg></span>Play on YouTube</a>
                     </div>
-                    <div class="countdown-live">
-                        <span class="chunk chunk-sun live-title" data-text="Demo Out Now!">Demo Out Now!</span>
-                        <div class="btn-row">
-                            <a href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener" class="btn btn-steam btn-live"><svg aria-hidden="true"><use href="#i-steam"/></svg>Play the Demo</a>
-                            <a href="https://www.kickstarter.com/projects/windweaver/windweaver-0/" target="_blank" rel="noopener" class="btn btn-kickstarter btn-live"><img src="assets/images/kickstarter-k.png" alt="">Back us on Kickstarter</a>
+                    <div class="panel">
+                        <h3 class="ribbon ribbon-sm">Windweaver</h3>
+                        <p class="panel-lead">Jonathan can&rsquo;t fly anymore, so he learned to run.</p>
+                        <p>Windweaver is a blisteringly fast 3D platformer - chain together abilities to tear your way across a vast world to get back home, whilst learning that the truth of the world may not be as it was told. Master dashing, diving, fallcharging and various abilities to traverse many hand-crafted levels.</p>
+                        <p>Windweaver is made by Greenfeather Studios, a small independent team from South Australia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="screen screen-green" aria-labelledby="play-title">
+            <div class="wrap">
+                <div class="screen-head">
+                    <h2 class="ribbon" id="play-title">Play</h2>
+                </div>
+                <div class="two-panels">
+                    <article class="panel" id="demo">
+                        <h3 class="ribbon ribbon-sm">Free Demo</h3>
+                        <p>The Windweaver demo is free on Steam. Online multiplayer is included.</p>
+                        <div class="panel-actions">
+                            <a class="btn btn-orange" href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener">Play free demo</a>
+                        </div>
+                    </article>
+
+                    <article class="panel" id="wishlist">
+                        <h3 class="ribbon ribbon-sm">Full Game</h3>
+                        <p>The full game is in development. Wishlist Windweaver on Steam and Steam will email you when it launches.</p>
+                        <div class="panel-actions">
+                            <a class="btn btn-dark" href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-steam"/></svg>Wishlist on Steam</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="screen screen-orange" id="features" aria-labelledby="features-title">
+            <div class="wrap">
+                <div class="screen-head">
+                    <h2 class="ribbon" id="features-title">Features</h2>
+                </div>
+                <ul class="feature-grid">
+                    <li class="panel">
+                        <h3 class="ribbon ribbon-sm">Speed Is Everything</h3>
+                        <p>Chain together massive dashes and blitz across enormous gaps. Read the rhythm of the sloped terrain to hold your top speed.</p>
+                    </li>
+                    <li class="panel">
+                        <h3 class="ribbon ribbon-sm">Dash, Dive, Wallrun</h3>
+                        <p>Dash across the ground, through the air and along walls. Dive back down for quick manoeuvres, wallrun the tight sections, and fallcharge to get going again if you&rsquo;re slowed down.</p>
+                    </li>
+                    <li class="panel">
+                        <h3 class="ribbon ribbon-sm">Find Your Route</h3>
+                        <p>Every level is hand-crafted. Seed Hoarder runs are high-speed collection runs that test your routing.</p>
+                    </li>
+                    <li class="panel">
+                        <h3 class="ribbon ribbon-sm">A World With Secrets</h3>
+                        <p>Between stages, travel from the humble town of Dyebrook to the peaks of Mossface Mountains. Take on side quests, run wild errands, and chase down the beam of light that took you down.</p>
+                    </li>
+                    <li class="panel">
+                        <h3 class="ribbon ribbon-sm">E Rank to W</h3>
+                        <p>Time Attack has you chasing faster splits, climbing from E rank all the way to the elusive W. Equip Pins to change how Jonathan moves, and upgrade them at the Blacksmith.</p>
+                    </li>
+                    <li class="panel">
+                        <h3 class="ribbon ribbon-sm">Rock and Roll</h3>
+                        <p>A rock and roll soundtrack from Stuart Woolley, with sound design and mixing by Diduilitm.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="screen screen-green" id="media" aria-labelledby="media-title">
+            <div class="wrap">
+                <div class="screen-head screen-head-row">
+                    <h2 class="ribbon" id="media-title">Media</h2>
+                    <p class="hint press-hint"><span>Press kit coming soon. Enquiries: <a href="mailto:windweavergfs@gmail.com">windweavergfs@gmail.com</a></span></p>
+                </div>
+
+                <div class="media-panels">
+                    <div class="panel">
+                        <h3 class="ribbon ribbon-sm">Screenshots</h3>
+                        <ul class="gallery">
+                            <li><button class="gallery-item" type="button"><img src="assets/images/ww_ss_vista.webp" alt="A sweeping view across the valley" data-caption="Cherry Valley" width="1600" height="900" loading="lazy"><span class="gallery-cap">Cherry Valley</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/ww_ss_falls.webp" alt="Waterfalls pouring through carved canyon arches" data-caption="Cherry Valley" width="1600" height="900" loading="lazy"><span class="gallery-cap">Cherry Valley</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/ww_ss_dive.webp" alt="Jonathan diving toward the water" data-caption="Cherry Valley" width="1600" height="900" loading="lazy"><span class="gallery-cap">Cherry Valley</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/ww_ss_bridge.webp" alt="A wooden boardwalk winding over open water" data-caption="Cherry Valley" width="1600" height="900" loading="lazy"><span class="gallery-cap">Cherry Valley</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/ww_ss_town.webp" alt="The industrial quarter at dusk" data-caption="Cherry Valley, town" width="1600" height="900" loading="lazy"><span class="gallery-cap">Cherry Valley, town</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/ww_ss_street.webp" alt="A quiet street lined with blossom" data-caption="Cherry Valley, town" width="1600" height="900" loading="lazy"><span class="gallery-cap">Cherry Valley, town</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/ww_ss_plaza.webp" alt="The town plaza" data-caption="Cherry Valley, town" width="1600" height="900" loading="lazy"><span class="gallery-cap">Cherry Valley, town</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/ww_ss_ravine.webp" alt="A narrow ravine run through pink grassland" data-caption="Cherry Valley" width="1600" height="900" loading="lazy"><span class="gallery-cap">Cherry Valley</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/ww_wallrun.webp" alt="Jonathan wallrunning past a chevron sign in a canyon" data-caption="Wallrunning" width="2000" height="1125" loading="lazy"><span class="gallery-cap">Wallrunning</span></button></li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3 class="ribbon ribbon-sm">Artwork</h3>
+                        <ul class="gallery art-grid">
+                            <li class="art-wide"><button class="gallery-item" type="button"><img src="assets/images/og_windweaver.jpg" alt="Windweaver key art: Jonathan running from a rider on a motorbike" data-caption="Key art" width="1200" height="630" loading="lazy"><span class="gallery-cap">Key art</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/JONATHAN_RENDER1.webp" alt="Jonathan render, running" data-caption="Jonathan" width="1000" height="1000" loading="lazy"><span class="gallery-cap">Jonathan</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/JONATHAN_RENDER2.webp" alt="Jonathan render, leaping" data-caption="Jonathan" width="1000" height="1000" loading="lazy"><span class="gallery-cap">Jonathan</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/JONATHAN_RENDER3.webp" alt="Jonathan render, dashing" data-caption="Jonathan" width="1000" height="1000" loading="lazy"><span class="gallery-cap">Jonathan</span></button></li>
+                            <li><button class="gallery-item" type="button"><img src="assets/images/Windweaver_FullLogo.png" alt="Windweaver logo" data-caption="Logo" width="1280" height="360" loading="lazy"><span class="gallery-cap">Logo</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="screen screen-orange" id="team" aria-labelledby="team-title">
+            <div class="wrap">
+                <div class="screen-head">
+                    <h2 class="ribbon" id="team-title">Team</h2>
+                </div>
+                <ul class="team-grid">
+                    <li class="panel member">
+                        <img class="member-photo" src="assets/images/Team_LandonGollop.png" alt="" width="512" height="512" loading="lazy">
+                        <h3>Landon Gollop</h3>
+                        <p class="member-role">Project Lead &amp; Programmer</p>
+                        <p class="member-bio">Landon started Windweaver, leads the project and writes the code that makes Jonathan move.</p>
+                    </li>
+                    <li class="panel member">
+                        <img class="member-photo" src="assets/images/Team_BryceEldridge.png" alt="" width="256" height="256" loading="lazy">
+                        <h3>Bryce Eldridge</h3>
+                        <p class="member-role">Level Design &amp; Community</p>
+                        <p class="member-bio">Bryce designs Windweaver&rsquo;s levels and runs our community, including the Discord.</p>
+                    </li>
+                    <li class="panel member">
+                        <img class="member-photo" src="assets/images/Team_JohnMetz.png" alt="" width="104" height="104" loading="lazy">
+                        <h3>John Metz</h3>
+                        <p class="member-role">Technical Art &amp; 3D Modelling</p>
+                        <p class="member-bio">John builds 3D models and handles technical art: the shaders, tools and pipeline that get the team&rsquo;s art into Unity.</p>
+                    </li>
+                    <li class="panel member">
+                        <img class="member-photo" src="assets/images/Team_2uko.png" alt="" width="256" height="256" loading="lazy">
+                        <h3>2uko!</h3>
+                        <p class="member-role">2D &amp; 3D Artist</p>
+                        <p class="member-bio">2uko! draws concept art and builds those designs as 3D models.</p>
+                    </li>
+                    <li class="panel member">
+                        <img class="member-photo" src="assets/images/Team_TiagoMarques.png" alt="" width="512" height="512" loading="lazy">
+                        <h3>Tiago Marques</h3>
+                        <p class="member-role">3D Animation &amp; Cutscenes</p>
+                        <p class="member-bio">Tiago animates Windweaver&rsquo;s characters, Jonathan included, and makes all of the game&rsquo;s cutscenes.</p>
+                    </li>
+                    <li class="panel member">
+                        <img class="member-photo" src="assets/images/Team_StuartWoolley.png" alt="" width="512" height="512" loading="lazy">
+                        <h3>Stuart Woolley</h3>
+                        <p class="member-role">Music &amp; Composition</p>
+                        <p class="member-bio">Stuart composes Windweaver&rsquo;s rock and roll soundtrack.</p>
+                    </li>
+                    <li class="panel member">
+                        <img class="member-photo" src="assets/images/Team_Diduilitm.png" alt="" width="512" height="512" loading="lazy">
+                        <h3>Diduilitm</h3>
+                        <p class="member-role">Sound Design &amp; Mixing</p>
+                        <p class="member-bio">Diduilitm designs Windweaver&rsquo;s sound effects, from dash bursts to seed pickups, and mixes the game&rsquo;s audio.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="screen screen-green" id="community" aria-labelledby="community-title">
+            <div class="wrap">
+                <div class="screen-head">
+                    <h2 class="ribbon" id="community-title">Community</h2>
+                </div>
+                <div class="community-grid">
+                    <div class="stripe-circle">
+                        <img src="assets/images/JONATHAN_RENDER2.webp" alt="" width="1000" height="1000" loading="lazy">
+                    </div>
+                    <div class="community-panels">
+                        <div class="panel">
+                            <h3 class="ribbon ribbon-sm">Socials</h3>
+                            <p>The Discord is the fastest way to reach the team, and it&rsquo;s where demo news and devlogs land first.</p>
+                            <ul class="socials">
+                                <li><a class="social is-discord" href="https://discord.com/invite/cyk9uw53G8" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-discord"/></svg>Discord</a></li>
+                                <li><a class="social is-steam" href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-steam"/></svg>Steam</a></li>
+                                <li><a class="social is-youtube" href="https://www.youtube.com/@GreenfeatherStudios" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-youtube"/></svg>YouTube</a></li>
+                                <li><a class="social is-instagram" href="https://www.instagram.com/greenfeatherstudiosdev" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-instagram"/></svg>Instagram</a></li>
+                                <li><a class="social is-x" href="https://x.com/Windweaver_GFS" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-x"/></svg>X</a></li>
+                                <li><a class="social is-bluesky" href="https://bsky.app/profile/greenfeatherstudio.bsky.social" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-bluesky"/></svg>Bluesky</a></li>
+                                <li><a class="social is-kickstarter" href="https://www.kickstarter.com/projects/windweaver/windweaver-0/" target="_blank" rel="noopener"><span class="icon-ks" aria-hidden="true"></span>Kickstarter</a></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="btn-row">
-                    <a href="windweaver.html" class="btn">Learn More</a>
-                    <a href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener" class="btn btn-steam"><svg aria-hidden="true"><use href="#i-steam"/></svg>Wishlist on Steam</a>
-                    <a href="https://www.kickstarter.com/projects/windweaver/windweaver-0/" target="_blank" rel="noopener" class="btn btn-kickstarter"><img src="assets/images/kickstarter-k.png" alt="">Follow on Kickstarter</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="socials-band">
-            <div class="container hidden">
-                <h2 class="section-title chunk chunk-sky" data-text="Where To Find Us">Where To Find Us</h2>
-                <p class="section-sub">Devlogs, alpha clips and demo news go out here first.</p>
-                <div class="social-grid">
-                    <a class="social-tile s-steam" href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener">
-                        <svg aria-hidden="true"><use href="#i-steam"/></svg>Steam<small>Wishlist Windweaver</small>
-                    </a>
-                    <a class="social-tile s-discord" href="https://discord.com/invite/cyk9uw53G8" target="_blank" rel="noopener">
-                        <svg aria-hidden="true"><use href="#i-discord"/></svg>Discord<small>Windweaver server</small>
-                    </a>
-                    <a class="social-tile s-youtube" href="https://www.youtube.com/@GreenfeatherStudios" target="_blank" rel="noopener">
-                        <svg aria-hidden="true"><use href="#i-youtube"/></svg>YouTube<small>@GreenfeatherStudios</small>
-                    </a>
-                    <a class="social-tile s-instagram" href="https://www.instagram.com/greenfeatherstudiosdev" target="_blank" rel="noopener">
-                        <svg aria-hidden="true"><use href="#i-instagram"/></svg>Instagram<small>@greenfeatherstudiosdev</small>
-                    </a>
-                    <a class="social-tile s-x" href="https://x.com/Windweaver_GFS" target="_blank" rel="noopener">
-                        <svg aria-hidden="true"><use href="#i-x"/></svg>X<small>@Windweaver_GFS</small>
-                    </a>
-                    <a class="social-tile s-bluesky" href="https://bsky.app/profile/greenfeatherstudio.bsky.social" target="_blank" rel="noopener">
-                        <svg aria-hidden="true"><use href="#i-bluesky"/></svg>Bluesky<small>@greenfeatherstudio</small>
-                    </a>
-                    <a class="social-tile s-kickstarter" href="https://www.kickstarter.com/projects/windweaver/windweaver-0/" target="_blank" rel="noopener">
-                        <img src="assets/images/kickstarter-k.png" alt="">Kickstarter<small>Back the campaign</small>
-                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <img src="assets/images/GFS_LongFull_Colored.png" alt="Greenfeather Studios" class="footer-logo">
-        <div class="footer-socials">
-            <a class="s-steam" href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener" aria-label="Windweaver on Steam"><svg aria-hidden="true"><use href="#i-steam"/></svg></a>
-            <a class="s-discord" href="https://discord.com/invite/cyk9uw53G8" target="_blank" rel="noopener" aria-label="Windweaver Discord"><svg aria-hidden="true"><use href="#i-discord"/></svg></a>
-            <a class="s-youtube" href="https://www.youtube.com/@GreenfeatherStudios" target="_blank" rel="noopener" aria-label="Greenfeather Studios on YouTube"><svg aria-hidden="true"><use href="#i-youtube"/></svg></a>
-            <a class="s-instagram" href="https://www.instagram.com/greenfeatherstudiosdev" target="_blank" rel="noopener" aria-label="Greenfeather Studios on Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
-            <a class="s-x" href="https://x.com/Windweaver_GFS" target="_blank" rel="noopener" aria-label="Windweaver on X"><svg aria-hidden="true"><use href="#i-x"/></svg></a>
-            <a class="s-bluesky" href="https://bsky.app/profile/greenfeatherstudio.bsky.social" target="_blank" rel="noopener" aria-label="Greenfeather Studios on Bluesky"><svg aria-hidden="true"><use href="#i-bluesky"/></svg></a>
-            <a class="s-kickstarter" href="https://www.kickstarter.com/projects/windweaver/windweaver-0/" target="_blank" rel="noopener" aria-label="Windweaver on Kickstarter"><img src="assets/images/kickstarter-k.png" alt=""></a>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <img class="footer-ww" src="assets/images/Windweaver_FullLogo.png" alt="Windweaver" width="1280" height="360" loading="lazy">
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#wishlist">Wishlist</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="footer-studio">
+                    <img class="footer-gfs" src="assets/images/GFS_LongFull_Colored.png" alt="Greenfeather Studios" width="3200" height="800" loading="lazy">
+                    <ul class="footer-socials">
+                        <li><a href="https://store.steampowered.com/app/4012590/Windweaver/" target="_blank" rel="noopener" aria-label="Windweaver on Steam"><svg aria-hidden="true"><use href="#i-steam"/></svg></a></li>
+                        <li><a href="https://discord.com/invite/cyk9uw53G8" target="_blank" rel="noopener" aria-label="Windweaver Discord"><svg aria-hidden="true"><use href="#i-discord"/></svg></a></li>
+                        <li><a href="https://www.youtube.com/@GreenfeatherStudios" target="_blank" rel="noopener" aria-label="Greenfeather Studios on YouTube"><svg aria-hidden="true"><use href="#i-youtube"/></svg></a></li>
+                        <li><a href="https://www.instagram.com/greenfeatherstudiosdev" target="_blank" rel="noopener" aria-label="Greenfeather Studios on Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+                        <li><a href="https://x.com/Windweaver_GFS" target="_blank" rel="noopener" aria-label="Windweaver on X"><svg aria-hidden="true"><use href="#i-x"/></svg></a></li>
+                        <li><a href="https://bsky.app/profile/greenfeatherstudio.bsky.social" target="_blank" rel="noopener" aria-label="Greenfeather Studios on Bluesky"><svg aria-hidden="true"><use href="#i-bluesky"/></svg></a></li>
+                        <li><a href="https://www.kickstarter.com/projects/windweaver/windweaver-0/" target="_blank" rel="noopener" aria-label="Windweaver on Kickstarter"><span class="icon-ks" aria-hidden="true"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Greenfeather Studios. All rights reserved.</p>
         </div>
-        <p>&copy; 2026 Greenfeather Studios. All rights reserved.</p>
     </footer>
 
-    <script src="script.min.js?v=ee0491c8"></script>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close viewer">&times;</button>
+        <button class="lightbox-nav" id="lightbox-prev" type="button" aria-label="Previous image"><svg aria-hidden="true"><use href="#i-arrow-l"/></svg></button>
+        <button class="lightbox-nav" id="lightbox-next" type="button" aria-label="Next image"><svg aria-hidden="true"><use href="#i-arrow-r"/></svg></button>
+        <div class="lightbox-stage">
+            <img alt="" id="lightbox-img">
+            <div class="lightbox-meta">
+                <span id="lightbox-caption"></span>
+                <span id="lightbox-count"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.min.js?v=6e0621c1"></script>
 </body>
 </html>
